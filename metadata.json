@@ -1,0 +1,8 @@
+{
+  "name": "Hello Ecom",
+  "description": "Digital Lab landing page and e-commerce showcase application",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
