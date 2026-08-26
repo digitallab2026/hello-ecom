@@ -111,21 +111,6 @@ Error generating stack: `+u.message+`
         console.warn("Server API submission:", err);
       }
 
-      // 2. Gửi trực tiếp đến Google Apps Script Web App nếu có
-      const scriptUrl = window.GOOGLE_SCRIPT_URL;
-      if (scriptUrl) {
-        try {
-          await fetch(scriptUrl, {
-            method: "POST",
-            mode: "no-cors",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(payload)
-          });
-        } catch (err) {
-          console.warn("Google Script direct submission:", err);
-        }
-      }
-
       localStorage.setItem("dl_leads_submitted", JSON.stringify({ name: e, email: t, at: Date.now() }));
       localStorage.setItem("dl_last_lead", JSON.stringify({ name: e, email: t }));
       i(!0);
