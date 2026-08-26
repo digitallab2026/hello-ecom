@@ -59,7 +59,7 @@ app.post('/api/submit-lead', async (req, res) => {
 app.get('/api/config', (req, res) => {
   res.json({
     googleScriptUrl: process.env.GOOGLE_SHEET_SCRIPT_URL || '',
-    resourceUrl: process.env.RESOURCE_REDIRECT_URL || 'https://drive.google.com'
+    resourceUrl: process.env.RESOURCE_REDIRECT_URL || 'https://linkecom.digitallab.pro.vn/'
   });
 });
 
